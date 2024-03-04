@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+}
+
+:root{
+    --text :#fefffd;
+    --button :#ff0303;
+    --background : linear-gradient(#063349 0%, #090979 35%, #00d4ff 100%);;
+    --background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0, 255, 234, 0.719) 0%, rgb(2, 85, 100) 90% );
+}
+
+body{
+    background: var(--background);
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    padding: 50px;
+    font-size:50px;
+    font-weight:bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 span{
+    color: var(--button);
+}
+
+section{
+    padding: 3px;
+    margin: 5%;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255, 0.1);
+    height: 270px;
+    /* width: 500px; */
+    border-top: 1px solid rgb(255, 255, 255, 0.75);
+    border-left: 1px solid rgb(255, 255, 255, 0.75);
+    box-shadow: 0 25px 45px rgb(0, 0, 0, 0.5);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+section h3{
+    margin: 25px;
+    border: 1px solid ;
+    padding: 30px;
+    margin: 5%;
+    border-radius: 5px;
+    height: 150px;
+    color: azure;
+    box-shadow: 0 25px 45px rgb(0, 0, 0, 0.5)
+
+
+}
+
+section button{
+    background: var(--button);
+    width: 200px;
+    height: 30px;
+    border-top: 1px solid rgb(255, 255, 255, 0.75);
+    border-left: 1px solid rgb(255, 255, 255, 0.75);
+    box-shadow: 0 25px 45px rgb(0, 0, 0, 0.5);
+    border-radius :30px;
+    margin-bottom: 5vh;
+    font-weight: 600;
+    font-size: large;
+    font-family:cursive;
+}
+

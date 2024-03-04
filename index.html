@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Joke</title>
+</head>
+<body>
+    <h1><span>R</span>andom <span>J</span>oke</h1>
+    <section>
+        <h3 id="txtchange"></h3>
+        <button onclick="myfun()">Aage</button>            
+    </section>
+<!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+
+    <script>
+        let get = document.getElementById("txtchange");
+
+        async function myfun(){
+            let getting = await fetch('https://icanhazdadjoke.com/',{
+                headers :{
+                    accept : "application/json"
+                }
+            })
+            let joke = await getting.json();
+            let data = joke.joke;
+            get.innerHTML=data;
+            console.log(data);
+        }
+        myfun()
+    </script>
+
+</body>
+</html>
